@@ -18,7 +18,7 @@ const Sidebar = () => {
 
   }
   return (
-    <div className={` md:block overflow-y-auto h-full py-4 w-[300px] mt-2 fixed sm:overflow-y-auto sm:fixed sm:bg-white sm:z-10  md:relative z-0 ${mobileMenu ? "block" : "hidden"} ${isDarkMode ? "border-gray-700": "border-gray-200"}`}>
+    <div className={` md:block overflow-y-auto h-[75%] py-4 w-[300px] mt-2 fixed z-10 sm:overflow-y-auto sm:fixed sm:bg-white sm:z-10  md:relative z-0 ${mobileMenu ? "block" : "hidden"} ${isDarkMode ? "border-gray-700": "border-gray-200"}`}>
         <div className='flex flex-col px-5 mb-20'>
 
           {categories.map((item) => (
@@ -43,7 +43,7 @@ const Sidebar = () => {
             isSelected={false}/>
           ))}
             <hr className={`my-3 ${isDarkMode ? "border-gray-600":"border-gray-300"}`}/>
-            <div className={`flex items-center justify-center text-sm flex-nowrap ${isDarkMode ? "sm:text-blue-600":"text-default"} `}>
+            <div className={`flex items-center justify-center text-lg font-semibold  flex-nowrap ${isDarkMode ? "text-blue-600 bg-teal-200":"text-yellow-600 bg-teal-300"} `}>
               made by : Vishwajeet Gaikwad
 
             </div>

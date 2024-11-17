@@ -8,13 +8,13 @@ const Menuitems = ({item,isSelected,onClick}) => {
   return (
     
     <div onClick={item.type === 'category' ? onClick:undefined} 
-     className={`px-4 py-3 flex items-center space-x-4 rounded-md cursor-pointer ${isDarkMode ? "text-gray-700 hover:bg-gray-700" : "text-gray-900 hover:bg-gray-100"} ${isSelected ? (isDarkMode ? "bg-gray-700" : "bg-gray-100") : ""}`}
+     className={`px-4 py-3  flex items-center space-x-4 rounded-md cursor-pointer ${isDarkMode ? "bg-teal-200  hover:bg-gray-700" : "bg-teal-500 hover:bg-gray-100"} ${isSelected ? (isDarkMode ? "bg-gray-700" : "bg-gray-100") : ""}`}
      >
-      <span className={`text-xl ${isDarkMode ? "text-gray-900" : "text-gray-700"} `}>
+      <span className={`text-xl ${isDarkMode ? "text-gray-900" : "text-gray-100"} `}>
         {item.icon}
 
       </span>
-      <span className={`text-sm ${isDarkMode ? "text-gray-900" : "text-gray-700"}`}>
+      <span className={`text-sm ${isDarkMode ? "text-gray-900" : "text-gray-100"}`}>
         {item.name}
 
       </span>
